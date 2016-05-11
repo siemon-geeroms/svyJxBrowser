@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aliases>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="true">
+    <name>dedecker_online</name>
+    <url></url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="true" commit-on-close="false">
+        <user-name>anonymous</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>anonymous</default-user>
+  </alias>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="true">
+    <name>globis_customer_framework</name>
+    <url></url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="true" commit-on-close="false">
+        <user-name>anonymous</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>anonymous</default-user>
+  </alias>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="true">
+    <name>globis_development</name>
+    <url></url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="true" commit-on-close="false">
+        <user-name>anonymous</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>anonymous</default-user>
+  </alias>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="true">
+    <name>globis_framework</name>
+    <url></url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="true" commit-on-close="false">
+        <user-name>anonymous</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>anonymous</default-user>
+  </alias>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="true">
+    <name>globis_metadata</name>
+    <url></url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="true" commit-on-close="false">
+        <user-name>anonymous</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>anonymous</default-user>
+  </alias>
+</aliases>

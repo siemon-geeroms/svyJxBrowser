@@ -1,0 +1,55 @@
+import java.awt.LayoutManager;
+
+import javax.swing.JPanel;
+
+import com.servoy.j2db.dataprocessing.IRecord;
+import com.servoy.j2db.dataui.IServoyAwareBean;
+import com.servoy.j2db.plugins.IClientPluginAccess;
+
+
+public class SvyJxBrowserBean extends JPanel implements IServoyAwareBean {
+
+	public SvyJxBrowserBean() {
+	}
+
+	public SvyJxBrowserBean(LayoutManager arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SvyJxBrowserBean(boolean arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SvyJxBrowserBean(LayoutManager arg0, boolean arg1) {
+		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isReadOnly() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void setValidationEnabled(boolean arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean stopUIEditing(boolean arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void initialize(IClientPluginAccess arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void setSelectedRecord(IRecord arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
