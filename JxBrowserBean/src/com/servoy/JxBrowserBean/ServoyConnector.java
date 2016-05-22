@@ -3,7 +3,6 @@ package com.servoy.JxBrowserBean;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import com.servoy.j2db.plugins.ClientPluginAccessProvider;
 import com.servoy.j2db.plugins.IClientPluginAccess;
 import com.teamdev.jxbrowser.chromium.JSArray;
 import com.teamdev.jxbrowser.chromium.JSValue;
@@ -24,13 +23,18 @@ public class ServoyConnector {
 		LOGGER.info("creating servoy connector");
 	}
 	
-	public Object runServoyMethod(String _context, String _methodName, JSArray args) throws Exception
+	public Object runServoyMethod(String _context, String _methodName, JSArray args)
+	{
+		return runServoyMethod(_context,_methodName,args,false);
+	}
+	
+	public Object runServoyMethod(String _context, String _methodName, JSArray args, boolean assync)
 	{
 		ArrayList<Object> conv_args = new ArrayList<Object>();
 		
 		int l = args.length();
 		
-		for(int ind = 0; ind < l; l++)
+		for(int ind = 0; ind < l; ind++)
 		{
 			JSValue value = args.get(ind);
 			if (value.isString())
@@ -44,9 +48,8 @@ public class ServoyConnector {
 		}
 		
 		try {
-			return clientConnector.executeMethod("_context", "_methodName" , conv_args.toArray(),false);
+			return clientConnector.executeMethod(_context, _methodName , conv_args.toArray(),assync);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			clientConnector.handleException(null, e);
 			return null;
 		}
