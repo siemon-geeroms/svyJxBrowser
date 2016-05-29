@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servoyextension>
+  <servoydoc>
+    <beans>
+      <object clientSupport="ng,wc,sc" publicName="SvyJxBrowserBean" qualifiedName="com.servoy.JxBrowserBean.SvyJxBrowserBean">
+        <properties>
+          <property clientSupport="ng,wc,sc" name="datProvider" undocumented="true">
+            <return type="com.servoy.j2db.documentation.scripting.docs.String" typecode="java.lang.String"><![CDATA[the Provider]]></return>
+          </property>
+        </properties>
+        <functions>
+          <function clientSupport="ng,wc,sc" name="isReadOnly">
+            <argumentsTypes/>
+            <return type="com.servoy.j2db.documentation.scripting.docs.Boolean" typecode="boolean"><![CDATA[what the method returns]]></return>
+            <descriptions>
+              <description clientSupport="ng,wc,sc"><![CDATA[This is the method description.]]></description>
+            </descriptions>
+            <summaries>
+              <summary clientSupport="ng,wc,sc"><![CDATA[This is the method description.]]></summary>
+            </summaries>
+            <samples>
+              <sample clientSupport="ng,wc,sc"><![CDATA[var message = someMethod('someParameter');]]></sample>
+            </samples>
+            <parameters>
+              <parameter name="simpleParameterName">
+                <description><![CDATA[this is a simple parameter name]]></description>
+              </parameter>
+            </parameters>
+          </function>
+        </functions>
+      </object>
+    </beans>
+  </servoydoc>
+</servoyextension>

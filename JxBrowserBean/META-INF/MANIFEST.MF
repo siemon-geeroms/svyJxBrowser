@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 
-Name: com/servoy/JxBrowserBean/svyJxBrowserBean.class
+Name: com/servoy/JxBrowserBean/SvyJxBrowser.class
 Java-Bean: True

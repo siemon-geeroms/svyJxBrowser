@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servoyextension>
+  <servoydoc>
+    <beans>
+      <object clientSupport="ng,wc,sc" publicName="SvyJxBrowserBean" qualifiedName="com.servoy.JxBrowserBean.SvyJxBrowserBean">
+        <properties>
+          <property clientSupport="ng,wc,sc" name="dataProvider" undocumented="true">
+            <return type="com.servoy.j2db.documentation.scripting.docs.String" typecode="java.lang.String"><![CDATA[the dataProvider]]></return>
+          </property>
+        </properties>
+        <functions>
+          <function clientSupport="ng,wc,sc" name="isReadOnly" undocumented="true">
+            <argumentsTypes/>
+            <return type="com.servoy.j2db.documentation.scripting.docs.Boolean" typecode="boolean"/>
+          </function>
+        </functions>
+      </object>
+    </beans>
+  </servoydoc>
+</servoyextension>

@@ -1,26 +1,24 @@
 package com.servoy.JxBrowserBean;
 
 import java.util.ArrayList;
-import java.util.logging.Logger;
-
 import com.servoy.j2db.plugins.IClientPluginAccess;
+import com.servoy.j2db.util.Debug;
 import com.teamdev.jxbrowser.chromium.JSArray;
 import com.teamdev.jxbrowser.chromium.JSValue;
 
 public class ServoyConnector {
 	
 	private IClientPluginAccess clientConnector;
-	private final static Logger LOGGER = Logger.getLogger(ServoyConnector.class.getName()); 
 	
 	public ServoyConnector(IClientPluginAccess clientCon)
 	{
-		LOGGER.info("creating servoy connector");
+		Debug.log("Init servoy connector");
 		clientConnector = clientCon;
 	}
 	
 	public ServoyConnector()
 	{
-		LOGGER.info("creating servoy connector");
+		Debug.log("creating servoy connector");
 	}
 	
 	public Object runServoyMethod(String _context, String _methodName, JSArray args)
@@ -48,6 +46,7 @@ public class ServoyConnector {
 		}
 		
 		try {
+			Debug.log("executing servoy method: " + _methodName);
 			return clientConnector.executeMethod(_context, _methodName , conv_args.toArray(),assync);
 		} catch (Exception e) {
 			clientConnector.handleException(null, e);
